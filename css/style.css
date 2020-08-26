@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
+body {
+font-family: Abhaya Libre SemiBold;
+
+}
+
+.p {
+  font-family: 'Poppins', sans-serif;
+}
+.t {
+  max-width: 50%;
+}

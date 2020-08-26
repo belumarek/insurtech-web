@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <script>
+// Load this when the DOM is ready
+$(function(){
+    // You used .myCarousel here.
+    // That's the class selector not the id selector,
+    // which is #myCarousel
+    $('#myCarousel').carousel();
+});
+</script>
 </head>
 
 <body>
@@ -26,11 +36,11 @@
   </div>
 
 <div class="container">
-  <div class="row primera-vista py-5 align-items-center" style="height: 100vh;" >
-    <div class="col-12 col-md-6">
-      <div class="info">
-        <h1>InsurTech Point</h1>
-        <p>Desarrollamos estrategias de negocios digitales con foco en los resultados.
+  <div class="row primera-vista py-1 align-items-center " style="height: 100vh;" >
+    <div class="col-12 col-md-6  ">
+      <div class="info" >
+        <h1 style="font-size: 85px;">InsurTech Point</h1>
+        <p class="p">Desarrollamos estrategias de negocios digitales con foco en los resultados.
         </p>
       </div>
     </div>
@@ -50,7 +60,7 @@
     <div class="col-12 col-md-6">
       <div class="info">
         <h1>En InsurTech Point</h1>
-        <p> Creamos soluciones tecnológicas que permiten crear valor en segmentos de mercado no gestionados por canales tradicionales.</p>
+        <p class="p"> Creamos soluciones tecnológicas que permiten crear valor en segmentos de mercado no gestionados por canales tradicionales.</p>
       </div>
     </div>
   </div>
@@ -62,29 +72,29 @@
 <div class="blue-background" style="background-color: #d8e5f6; height: 80vh; width: 100%">
   <div class="container py-5 align-items-center">
    <div class="text-center">
-      <h2>Pilares del Modelo</h2>
-      <p>Desarrollamos soluciones sobre tres pilares fundamentales</p>
+      <h1>Desarrollamos soluciones sobre tres pilares fundamentales</h1>
+
     </div>
     <div class="cards py-5 align-items-center" >
       <div class="row">
         <div class="col-12 col-md-4">
           <div class="card p-3"> <!-- falta objeto animado -->
             <h3>Innovacion</h3>
-            <p>Investigamos, desarrollamos e implementamos soluciones digitales que permiten hacer rentables diferentes líneas de negocios.</p>
+            <p class="p">Investigamos, desarrollamos e implementamos soluciones digitales que permiten hacer rentables diferentes líneas de negocios.</p>
             <a href="">Learn more</a>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="card p-3"> <!-- falta objeto animado -->
             <h3>Experiencia</h3>
-            <p>Entendemos la industria aseguradora en todas sus áreas y canales de distribución lo que disminuye los costos en el diseño de nuevos productos y su implementación</p>
+            <p class="p">Entendemos la industria aseguradora en todas sus áreas y canales de distribución lo que disminuye los costos en el diseño de nuevos productos y su implementación</p>
             <a href="">Learn more</a>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="card p-3"> <!-- falta objeto animado -->
             <h3>Colaboracion</h3>
-            <p>Nuestro trabajo se centra en ntegrar diferentes tecnologías y conocimientos para llevar a los consumidores la mejor experiencia en el uso de su protección.</p>
+            <p class="p">Nuestro trabajo se centra en ntegrar diferentes tecnologías y conocimientos para llevar a los consumidores la mejor experiencia en el uso de su protección.</p>
             <a href="">Learn more</a>
           </div>
         </div>
@@ -97,12 +107,15 @@
 </div>
 
 <div class="container">
-  <h2>Nuestras Soluciones</h2>
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
       <div class="info">
-        <h1>Desarrollo de productos y estrategias comerciales</h1>
-        <p> Desarrollamos productos y armamos estrategias comerciales Lorem ipsum dolor sit!</p>
+        <h1>Nuestras Soluciones</h1>
+        <h3>Desarrollo de productos y estrategias comerciales</h3>
+        <p class="p"> Desarrollamos productos únicos para la industria del seguro, mejorando los ya  existentes, que luego junto a nuestros socios,  transformamos en grandes negocios.
+Validamos la idea, analizamos que el producto se ajuste al mercado y comprobamos que sea posible una distribución a escala y con rentabilidad.
+Gracias a la experiencia adquirida en el mercado de seguros y el talento de nuestros ingenieros y nuestro equipo de marketing, utilizamos la tecnología a nuestra disposición para entregar un producto adaptado de alto impacto.
+</p>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -116,12 +129,43 @@
 <div class="container">
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
-      <img src="css/images/chicaSeguridad.png" alt="">
+      <img src="css/images/celular.png" alt="">
     </div>
     <div class="col-12 col-md-6">
       <div class="info">
-        <h1>Soluciones, Suscripcion y Prevencion de fraudes Smartgraph</h1>
-        <p> Creamos soluciones tecnológicas que permiten detectar fraudes gracias a Smartgraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus recusandae voluptas delectus, eveniet facilis sapiente earum unde saepe repellendus nisi perferendis modi in praesentium debitis placeat ex quibusdam dolor laboriosam!</p>
+        <h1>Tecnologias claves</h1>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators"  style="background-color: black;" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators"  style="background-color: black;" data-slide-to="1"></li>
+
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card shadow-lg p-4 mb-5 bg-white rounded border  ">
+                  <h3 style="color: #12ada3;">Smarth Diagnostic</h3>
+                  <p >Esta Plataforma, exclusiva de Insurtech Point Design, permite diagnosticar, documentar y relevar el estado integral del teléfono o dispositivo móvil del Cliente interesado en contratar el seguro, según los requerimientos que se definan, conforme las necesidades impartidas por la Compañía de Seguros.</p>
+                </div>
+                </div>
+              <div class="carousel-item">
+                <div class="card shadow-lg p-4 mb-5 bg-white rounded border ">
+                  <h3 style="color: #12ada3">Smartgraph</h3>
+                  <p>Plataforma de analítica de datos sobre grafos que trabaja con la información en tiempo real y que puede ser utilizada tanto por usuarios de negocio como por analistas de datos. Clasifica los modelos, reduciendo los costos, con un sistema de automatización basado en Inteligencia Artificial.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="color: black;"  >
+              <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="color: black;">
+              <span class="carousel-control-next-icon" aria-hidden="true" ></span> -->
+
+            </a>
+          </div>
+
       </div>
     </div>
   </div>
@@ -129,40 +173,20 @@
 
 <div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
 
-<div class="container">
+<div class="container " style="height: 100vh;">
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
       <div class="info">
-        <h1>Consultoria estrategica en ventas y fidelizacion de clientes Renanscentia</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates reiciendis atque, ipsa placeat! Impedit, repudiandae ad maxime incidunt consequuntur quam, aliquam recusandae libero eos sapiente, quae dolore inventore repellat officia.</p>
+        <h1> Consultoría estratégica de fidelización de clientes</h1>
+        <ul>
+          <li>Impulsamos la rentabilidad a través del diseño, desarrollo, gestión y fidelización de la cartera de clientes, con una solución llave en mano de retención y participación "modular". </li>
+          <li>Ofrecemos un servicio integral empleando nuestra experiencia corporativa en las Industrias de seguros y servicios financieros para evaluar con precisión oportunidades en diferentes áreas.</li>
+          <li>Realizamos un diagnóstico con nuestros clientes que es fundamental para identificar áreas de oportunidades, el punto de partida y el  punto de llegada. Dependiendo del caso, esta fase puede llevar desde 4 hasta 12 semanas e incluyen análisis de base de datos, entrevistas e investigación de mercado según sea necesario.</li>
       </div>
     </div>
     <div class="col-12 col-md-6">
       <img src="css/images/hablando.png" alt="">
     </div>
-  </div>
-</div>
-
-<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
-
-<div class="container">
-  <div class="row segunda-vista py-5 align-items-center">
-    <div class="col-12 col-md-6">
-      <img src="css/images/celular.png" alt="">
-    </div>
-    <div class="col-12 col-md-6">
-      <div class="info">
-        <h1>Comercializacion de tecnologias clave para la industria aseguradora</h1>
-        <p>La Plataforma para Diagnóstico de Celulares
-          o “PDC” es una aplicación para diagnosticar,
-          documentar y relevar el estado integral del
-          teléfono o dispositivo móvil del cliente-ase-
-          gurable interesado en contratar la póliza que
-          se comercializa, según los requerimientos
-          que se definan, para aplicar conforme las
-          necesidades impartidas por el socio.
-        </p>
-      </div>
     </div>
   </div>
 </div>
@@ -170,47 +194,19 @@
 <div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
 
 
-<div class="container">
-  <div class="row segunda-vista py-5 align-items-center">
+
+<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
+
+
+
+
+<div class="container ">
+  <div class="row segunda-vista py-5 align-items-center ">
     <div class="col-12 col-md-6">
       <div class="info">
-        <h1>Soporte de peritacion de vehiculos, hogar y embarcaciones</h1>
-        <p>La asistencia remota para la peritación de vehículos, hogar y embarcaciones engloba los procesos, herramientas y trabajos que tienen como objetivo facilitar,
-          la peritación de un siniestro y/o una inspección previa, realizada por profesionales del sector, pero sin la necesidad de la personificación del profesional en
-          el lugar o sin la revisión del vehículo de forma física.
-        </p>
-      </div>
-      <div class="lis">
-        <h3>Esta asistencia remota trata de manera fundamental de:</h3>
-        <p>En caso de siniestro:</p>
-        <ul>
-          <li>Establecer las causas de siniestro.</li>
-          <li>Aclarar las circunstancias del siniestro.</li>
-          <li>Acotar las consecuencias del accidente.</li>
-          <li>Tasación económica de los daños, lesiones y pérdidas ocasionadas.</li>
-          <li>Para inspecciones previas.</li>
-          <li>Tasación económica de la carta de daños</li>
-          <li>Evaluación sobre el estado general del riesgo</li>
-          <li>Viabilidad de cobertura</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <h1 style="" class="Socios text-center ">Socios Estratégicos</h1>
+        <h3>Trabajamos con Compañías que, como nosotros, buscan trascender, son inquietas y con grandes ideas</h3>
 
-<div class="separador-rosa" style="width: 100%; height:100px; background-color: #d55691;">
-  <h2 style="color: white;" class="Socios text-center">Socios Estratégicos</h2>
-</div>
-
-<div class="container">
-  <div class="row segunda-vista py-5 align-items-center">
-    <div class="col-12 col-md-6">
-      <div class="info">
-        <h1>Trabajamos con compañías como la suya, que buscan trascender, inquietas con grandes ideas.</h1>
-        <p>Transitamos ese camino hacia una verdadera transformación digital juntos, desarrollamos productos,
-          diseñamos la estrategia de comercialización y lo integramos con tecnología, para llevar
-          al mercado soluciones que sean adaptables a diferentes canales de manera sustentable.
-        </p>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -221,20 +217,17 @@
 
 <div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
 
-<div class="container">
+<div class="container" style="height: 80vh;">
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
-      <img src="css/images/.png" alt="">
+      <img src="https://lh3.googleusercontent.com/proxy/vFzpBtV3l0yzOt9JOI1pa6Tsn6aU3QQDaunGPIFL3rLFjFtcjokCdBDSQTHer4EPpJmdkgqMPtJ3Jg4Osnoz9bgN8XSGzB91NNGj16n3Rxu1CEC97pDpKs4QK8bAZm-JYZDEXmUANZcT9rbrDbND0Ly_kUBD1GIlT2SK" alt="">
     </div>
     <div class="col-12 col-md-6">
       <div class="info">
         <h1>Acerca de nosotros</h1>
-        <p>Insurtech Point Design, fundada en 2019 por personas con amplia trayectoria en el mercado de seguros de personas y
-          sólida experiencia en la implementación e integración de soluciones tecnológicas con la visión de ayudar a las personas
-          a contratar coberturas de manera simple y segura a través de aplicaciones de última generación.
+        <p class="p">Insurtech Point Design, creada por personas con amplia trayectoria en el mercado de seguros de personas y sólida experiencia en la implementación e integración de soluciones tecnológicas con la visión de ayudar a las personas a contratar coberturas de manera simple y segura a través de aplicaciones de última generación.
+          La familia Insurtech Point Design se consolida con un equipo de I+D de clase mundial y actuarios de vasta trayectoria en la industria aseguradora, además contamos con expertos en UX/UI, full stack developers, y analistas de datos con más de 20 años de experiencia en seguros.
         </p>
-        <p>Con oficinas en Europa y Latam. brindamos soluciones a empresas aseguradoras contribuyendo con la industria, configurando nuestro propio y definitivo ecosistema:
-          “Insurtech Total”.</p>
       </div>
     </div>
   </div>
@@ -242,17 +235,16 @@
 
 <div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
 
-
 <div class="container">
   <div class="row">
-    <div class="col-12 col-lg-6">
-      <div >
+    <div class="col-12 col-md-6">
+      <div class="mt-5" >
         <h1>Contactanos</h1>
-        <p>Llena el formulario y te responderemos a la brevedad</p>
+        <p class="p">Llena el formulario y te responderemos a la brevedad</p>
         <form>
-          <div class="form-group">
+          <div class="form-group ">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control form-1" id="exampleInputEmail1" aria-describedby="emailHelp" >
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
@@ -268,7 +260,7 @@
       </div>
     </div>
     <div class="col-12 col-lg-6">
-      <img src="css/images/2.png" style="width: 500px; height: 500px" alt="">
+      <img src="css/images/2.png"  style="width: 600px; height: 600px margin-top:10px;" alt="">
     </div>
   </div>
 </div>
@@ -280,5 +272,9 @@
      </div>
   <!-- Copyright -->
 </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="/static/js/bootstrap.js"></script>
 </body>
 </html>
