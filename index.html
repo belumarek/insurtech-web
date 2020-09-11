@@ -6,17 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet"  href="css/movimiento-texto.css">
+    <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
-    <script>
-// Load this when the DOM is ready
-$(function(){
-    // You used .myCarousel here.
-    // That's the class selector not the id selector,
-    // which is #myCarousel
-    $('#myCarousel').carousel();
-});
-</script>
+
 </head>
 
 <body>
@@ -32,7 +26,7 @@ $(function(){
       <div class="hamburger"><div></div></div>
         <div class="menu">
           <div>
-            <div>
+            <div class="stroke fill">
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pilares fundamentales</a></li>
@@ -48,10 +42,11 @@ $(function(){
   </nav>
 </div>
 
+<!-- INTRO -->
 
 <div class="container">
   <div class="row primera-vista py-1 align-items-center " style="height: 100vh;" >
-    <div class="col-12 col-md-6  ">
+    <div class="col-12 col-md-6">
       <div class="info">
         <h1>InsurTech Point</h1>
         <p>Desarrollamos estrategias de negocios digitales con foco en los resultados.
@@ -66,13 +61,15 @@ $(function(){
 
 <div class="separador-verde" style="width: 100%; height:150px; background-color: #12ada3; margin-top: -145px;"></div>
 
+<!-- 2nd INTRO -->
+
 <div class="container">
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
       <img src="css/images/2.gif" alt="">
     </div>
-    <div class="col-12 col-md-6">
-      <div class="info">
+    <div class="col-12 col-md-6 text-intro">
+      <div class="">
         <h2>En InsurTech Point</h2>
         <p class="p"> Creamos soluciones tecnológicas que permiten crear valor en segmentos de mercado no gestionados por canales tradicionales.</p>
       </div>
@@ -83,6 +80,8 @@ $(function(){
 <div class="separador-rosa" style="width: 100%; height:100px; background-color: #d55691;">
 </div>
 
+<!-- Pilares Fundamentales Cards -->
+
 <div class="blue-background" style="background-color: #d8e5f6; height: 80vh; width: 100%">
   <div class="container py-5 align-items-center tercera-vista">
    <div class="text-center">
@@ -90,37 +89,63 @@ $(function(){
       <p>Desarrollamos <strong>soluciones</strong> basadas en:</p>
 
     </div>
-    <div class="cards py-5 align-items-center" >
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="card p-3"> <!-- falta objeto animado -->
-            <h3>Innovacion</h3>
-            <p class="p">Investigamos, desarrollamos e implementamos soluciones digitales que permiten hacer rentables diferentes líneas de negocios.</p>
-            <a href="">Learn more</a>
+    <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="cards">
+              <div class="face face1">
+                  <div class="content">
+                      <div class="icon">
+                         <h2>INNOVACION</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content" style="font-size: 5px;">
+                      <p>Investigamos, desarrollamos e implementamos <strong>soluciones digitales </strong>que permiten hacer rentables diferentes líneas de negocios.</p>
+                  </div>
+              </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="card p-3"> <!-- falta objeto animado -->
-            <h3>Experiencia</h3>
-            <p class="p">Entendemos la industria aseguradora en todas sus áreas y canales de distribución lo que disminuye los costos en el diseño de nuevos productos y su implementación</p>
-            <a href="">Learn more</a>
+        <div class="col-12 col-lg-4">
+          <div class="cards">
+              <div class="face face1">
+                  <div class="content">
+                      <div class="icon">
+                         <h2>EXPERIENCIA</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <p>Entendemos la industria aseguradora en todas sus áreas y canales de distribución lo que disminuye los costos en el diseño de nuevos productos y su implementación.</p>
+                  </div>
+              </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="card p-3"> <!-- falta objeto animado -->
-            <h3>Colaboracion</h3>
-            <p class="p">Nuestro trabajo se centra en ntegrar diferentes tecnologías y conocimientos para llevar a los consumidores la mejor experiencia en el uso de su protección.</p>
-            <a href="">Learn more</a>
+        <div class="col-12 col-lg-4">
+          <div class="cards">
+              <div class="face face1">
+                  <div class="content">
+                      <div class="icon">
+                         <h2>COLABORACION</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <p>Nuestro trabajo se centra en ntegrar diferentes tecnologías y conocimientos para llevar a los consumidores la mejor experiencia en el uso de su protección.</p>
+                  </div>
+              </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </div>
 
 <div class="separador-verdeA" style="width: 100%; height:100px; background-color: #bfd769;">
 </div>
 
+<!-- Nuestras Soluciones -->
 <div class="container">
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
@@ -139,55 +164,54 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
   </div>
 </div>
 
+<!-- -------------------------------- -->
+
 <div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -50px;"></div>
 
+<!-- Tecnologias Clave CARRUSEL -->
 <div class="container">
-  <div class="row segunda-vista py-5 align-items-center">
-    <div class="col-12 col-md-6">
-      <img src="css/images/celular.png" alt="">
-    </div>
-    <div class="col-12 col-md-6">
-      <div class="info">
-        <h2>Tecnologias claves</h2>
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators"  style="background-color: black;" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators"  style="background-color: black;" data-slide-to="1"></li>
-
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card shadow-lg p-4 mb-5 bg-white rounded border  ">
-                  <h3 style="color: #12ada3;">Smarth Diagnostic</h3>
+  <div class="segunda-vista py-5 align-items-center">
+    <div class="info align-items-center text-center pb-5">
+      <h1>Tecnologias claves</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators"  style="background-color: black;" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators"  style="background-color: black;" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <div class="card p-4 mb-5 bg-white rounded border border-white">
+                <div>
+                  <img src="css/images/celular.png" alt="" width="80" height="80">
+                </div>
+                <div>
+                  <h3 style="color: #12ADA3;">Smarth Diagnostic</h3>
                   <p >Esta Plataforma, exclusiva de Insurtech Point Design, permite diagnosticar, documentar y relevar el estado integral del teléfono o dispositivo móvil del Cliente interesado en contratar el seguro, según los requerimientos que se definan, conforme las necesidades impartidas por la Compañía de Seguros.</p>
                 </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="card  p-4 mb-5 bg-white rounded border border-white">
+                 <div>
+                  <img src="css/images/celular.png" alt="" width="80" height="80">
                 </div>
-              <div class="carousel-item">
-                <div class="card shadow-lg p-4 mb-5 bg-white rounded border ">
-                  <h3 style="color: #12ada3">Smartgraph</h3>
+                <div>
+                  <h3 style="color: #12ADA3">Smartgraph</h3>
                   <p>Plataforma de analítica de datos sobre grafos que trabaja con la información en tiempo real y que puede ser utilizada tanto por usuarios de negocio como por analistas de datos. Clasifica los modelos, reduciendo los costos, con un sistema de automatización basado en Inteligencia Artificial.</p>
                 </div>
               </div>
             </div>
           </div>
-
-            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="color: black;"  >
-              <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="color: black;">
-              <span class="carousel-control-next-icon" aria-hidden="true" ></span> -->
-
-            </a>
-          </div>
-
-      </div>
+        </div>
     </div>
   </div>
 </div>
 
-<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -20px;"></div>
 
+<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -20px;"></div>
+<!-- -------------------------------- -->
+
+<!-- Consultoria estrategica -->
 <div class="container " style="height: 100vh;">
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
@@ -206,12 +230,11 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
   </div>
 </div>
 
+<!-- -------------------------------- -->
 
 <div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
 
-
-<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
-
+<!-- Socios estrategicos -->
 <div class="container ">
   <div class="row segunda-vista py-5 align-items-center ">
     <div class="col-12 col-md-6">
@@ -226,8 +249,12 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
   </div>
 </div>
 
+<!-- -------------------------------- -->
+
 <div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -20px;"></div>
 
+
+<!-- Acerca de Nosotros -->
 <div class="container" style="height: 80vh;">
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
@@ -244,13 +271,17 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
   </div>
 </div>
 
+<!-- -------------------------------- -->
+
 <div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
+
+<!-- Contacto -->
 
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-6">
       <div class="mt-5" >
-        <h1>Contactanos</h1>
+        <h2>Contactanos</h2>
         <p class="p">Llena el formulario y te responderemos a la brevedad</p>
         <form>
           <div class="form-group ">
@@ -275,6 +306,7 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
     </div>
   </div>
 </div>
+<!-- -------------------------------- -->
 
 
 <footer class="page-footer font-small blue pt-4">

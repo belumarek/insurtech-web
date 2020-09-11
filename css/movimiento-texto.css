@@ -1,0 +1,21 @@
+.text-intro {
+  width: 30%;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: 2s all ease-in-out;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.intro-appear {
+  /*opacity: 1;
+  transform: translateY(0px);*/
+  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    opacity: 1 !important;
+}
