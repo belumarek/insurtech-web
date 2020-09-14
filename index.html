@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet"  href="css/movimiento-texto.css">
     <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-<div>
+<div class="sticky-top">
   <nav class="navbar navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#home">
       <img src="css/images/logo.jpg" width="50" height="60" alt="">
     </a>
+    <a href="" name="home"></a>
     <div class="menu-wrap">
       <input type="checkbox" class="toggler">
       <div class="hamburger"><div></div></div>
@@ -28,12 +30,12 @@
           <div>
             <div class="stroke fill">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pilares fundamentales</a></li>
-                <li><a href="#">Nuestras soluciones</a></li>
-                <li><a href="#">Socios estratégicos</a></li>
-                <li><a href="#">Acerca de nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pilares">Pilares fundamentales</a></li>
+                <li><a href="#soluciones">Nuestras soluciones</a></li>
+                <li><a href="#socios">Socios estratégicos</a></li>
+                <li><a href="#nosotros">Acerca de nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
               </ul>
             </div>
           </div>
@@ -59,7 +61,7 @@
   </div>
 </div>
 
-<div class="separador-verde" style="width: 100%; height:150px; background-color: #12ada3; margin-top: -145px;"></div>
+<div class="separador-verde" style="width: 100%; height:150px; background-color: #12ada3; margin-top: -100px;"></div>
 
 <!-- 2nd INTRO -->
 
@@ -78,6 +80,7 @@
 </div>
 
 <div class="separador-rosa" style="width: 100%; height:100px; background-color: #d55691;">
+<a href="" name="pilares"></a>
 </div>
 
 <!-- Pilares Fundamentales Cards -->
@@ -142,7 +145,13 @@
   </div>
 </div>
 
-<div class="separador-verdeA" style="width: 100%; height:100px; background-color: #bfd769;">
+<div class="separador-verdeA d-flex align-items-center" style="width: 100%; height:200px; background-color: #bfd769;">
+<a href="" name="soluciones"></a>
+<h1 style="
+    color: white;
+    margin: auto;
+
+"> Nuestras Soluciones</h1>
 </div>
 
 <!-- Nuestras Soluciones -->
@@ -150,8 +159,8 @@
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
       <div class="info">
-        <h2>Nuestras Soluciones</h2>
-        <h3>Desarrollo de productos y estrategias comerciales</h3>
+        <span id="ceroUno"> 01</span>
+        <h2>Desarrollo de productos y estrategias comerciales</h2>
 <!--         <p class="p"> Desarrollamos productos únicos para la industria del seguro, mejorando los ya  existentes, que luego junto a nuestros socios,  transformamos en grandes negocios.
 Validamos la idea, analizamos que el producto se ajuste al mercado y comprobamos que sea posible una distribución a escala y con rentabilidad.
 Gracias a la experiencia adquirida en el mercado de seguros y el talento de nuestros ingenieros y nuestro equipo de marketing, utilizamos la tecnología a nuestra disposición para entregar un producto adaptado de alto impacto.
@@ -166,13 +175,15 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
 
 <!-- -------------------------------- -->
 
-<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -50px;"></div>
+<div class="separador-verde" style="width: 100%; height:100px; background-color: #20B5CA; margin-top: -50px;"></div>
 
 <!-- Tecnologias Clave CARRUSEL -->
 <div class="container">
   <div class="segunda-vista py-5 align-items-center">
     <div class="info align-items-center text-center pb-5">
-      <h1>Tecnologias claves</h1>
+      <span id="ceroDos"> 02</span>
+
+      <h2>Tecnologias claves</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators"  style="background-color: black;" data-slide-to="0" class="active"></li>
@@ -180,24 +191,24 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active ">
-              <div class="card p-4 mb-5 bg-white rounded border border-white">
-                <div>
-                  <img src="css/images/celular.png" alt="" width="80" height="80">
-                </div>
-                <div>
-                  <h3 style="color: #12ADA3;">Smarth Diagnostic</h3>
-                  <p >Esta Plataforma, exclusiva de Insurtech Point Design, permite diagnosticar, documentar y relevar el estado integral del teléfono o dispositivo móvil del Cliente interesado en contratar el seguro, según los requerimientos que se definan, conforme las necesidades impartidas por la Compañía de Seguros.</p>
+              <div class="card p-4 mb-5 bg-white rounded border border-white ">
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="css/images/superheroe.png", width="350" height="350" style="position: relative;">
+                    <div>
+                      <h3 style="color: #12ADA3;">Smarth Diagnostic</h3>
+                      <p >Esta Plataforma, exclusiva de Insurtech Point Design, permite diagnosticar, documentar y relevar el estado integral del teléfono o dispositivo móvil del Cliente interesado en contratar el seguro, según los requerimientos que se definan, conforme las necesidades impartidas por la Compañía de Seguros.</p>
+                    </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item ">
               <div class="card  p-4 mb-5 bg-white rounded border border-white">
-                 <div>
-                  <img src="css/images/celular.png" alt="" width="80" height="80">
-                </div>
-                <div>
-                  <h3 style="color: #12ADA3">Smartgraph</h3>
-                  <p>Plataforma de analítica de datos sobre grafos que trabaja con la información en tiempo real y que puede ser utilizada tanto por usuarios de negocio como por analistas de datos. Clasifica los modelos, reduciendo los costos, con un sistema de automatización basado en Inteligencia Artificial.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <img src="css/images/celular.png" alt="" width="250" height="350", style="position:relative;">
+                    <div>
+                      <h3 style="color: #12ADA3">Smartgraph</h3>
+                      <p>Plataforma de analítica de datos sobre grafos que trabaja con la información en tiempo real y que puede ser utilizada tanto por usuarios de negocio como por analistas de datos. Clasifica los modelos, reduciendo los costos, con un sistema de automatización basado en Inteligencia Artificial.</p>
+                    </div>
                 </div>
               </div>
             </div>
@@ -208,14 +219,15 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
 </div>
 
 
-<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -20px;"></div>
+<div class="separador-verde" style="width: 100%; height:100px; background-color: #C2C06D; margin-top: -20px;"></div>
 <!-- -------------------------------- -->
 
 <!-- Consultoria estrategica -->
-<div class="container " style="height: 100vh;">
+<div class="container " style="height: 80vh;">
   <div class="row segunda-vista py-5 align-items-center">
     <div class="col-12 col-md-6">
-      <div class="info">
+      <div class="info align-items-center text-center pb-5">
+        <span id="ceroTres"> 03</span>
         <h2> Consultoría estratégica de fidelización de clientes</h2>
       <!--   <ul>
           <li>Impulsamos la rentabilidad a través del diseño, desarrollo, gestión y fidelización de la cartera de clientes, con una solución llave en mano de retención y participación "modular". </li>
@@ -225,43 +237,47 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <img src="css/images/4.gif" alt="">
+      <img src="css/images/chicaSeguridad.png" alt="">
     </div>
   </div>
 </div>
 
 <!-- -------------------------------- -->
 
-<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
+<div class="separador-verde" style="width: 100%; height:100px; background-color: #77708C; margin-top: -105px;">
+  <a href="" name="socios"></a>
+</div>
 
 <!-- Socios estrategicos -->
-<div class="container ">
-  <div class="row segunda-vista py-5 align-items-center ">
+<div class="container d-flex align-items-center" style="height: 80vh">
+  <div class="row socios-estrategicos py-5 align-items-center ">
     <div class="col-12 col-md-6">
-      <div class="info">
-        <h2 style="" class="Socios text-center ">Socios Estratégicos</h2>
-        <h3>Trabajamos con Compañías que, como nosotros, buscan trascender, son inquietas y con grandes ideas</h3>
-      </div>
+      <img src="css/images/4.gif" alt="">
     </div>
     <div class="col-12 col-md-6">
-      <img src="css/images/celu2.png" alt="">
+      <div class="info">
+        <h2 style="" class="Socios">Socios Estratégicos</h2>
+        <p>Trabajamos con Compañías que, como nosotros, buscan trascender, son inquietas y con grandes ideas</p>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- -------------------------------- -->
 
-<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -20px;"></div>
+<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -20px;">
+  <a href="" name="nosotros"></a>
+</div>
 
 
 <!-- Acerca de Nosotros -->
-<div class="container" style="height: 80vh;">
-  <div class="row segunda-vista py-5 align-items-center">
+<div class="container d-flex align-items-center" style="height: 80vh;">
+  <div class="row segunda-vista py-5">
     <div class="col-12 col-md-6">
-      <img src="https://lh3.googleusercontent.com/proxy/vFzpBtV3l0yzOt9JOI1pa6Tsn6aU3QQDaunGPIFL3rLFjFtcjokCdBDSQTHer4EPpJmdkgqMPtJ3Jg4Osnoz9bgN8XSGzB91NNGj16n3Rxu1CEC97pDpKs4QK8bAZm-JYZDEXmUANZcT9rbrDbND0Ly_kUBD1GIlT2SK" alt="">
+      <img src="css/images/logo.jpg" style="width: 400px" alt="">
     </div>
     <div class="col-12 col-md-6">
-      <div class="info">
+      <div class="info" style="margin-top:50px;">
         <h2>Acerca de nosotros</h2>
         <p class="p">Insurtech Point Design, creada por personas con amplia trayectoria en el mercado de seguros de personas y sólida experiencia en la implementación e integración de soluciones tecnológicas con la visión de ayudar a las personas a contratar coberturas de manera simple y segura a través de aplicaciones de última generación.
           La familia Insurtech Point Design se consolida con un equipo de I+D de clase mundial y actuarios de vasta trayectoria en la industria aseguradora, además contamos con expertos en UX/UI, full stack developers, y analistas de datos con más de 20 años de experiencia en seguros.
@@ -273,7 +289,9 @@ Gracias a la experiencia adquirida en el mercado de seguros y el talento de nues
 
 <!-- -------------------------------- -->
 
-<div class="separador-verde" style="width: 100%; height:100px; background-color: #12ada3; margin-top: -105px;"></div>
+<div class="separador-verde" style="width: 100%; height:100px; background-color: #C94693 ; margin-top: -105px;">
+  <a href="" name="contacto"></a>
+</div>
 
 <!-- Contacto -->
 
